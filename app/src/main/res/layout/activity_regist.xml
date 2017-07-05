@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="androidpermission.com.bw.test.dliao.activity.RegistActivity"
+    android:id="@+id/regist_layout"
+    >
+
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/pub_title"
+        ></include>
+    <EditText
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/resist_user"
+        android:textColorHint="#A5A5A5"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="手机号"
+        />
+        <LinearLayout
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/regist_pwd"
+                android:textColorHint="#A5A5A5"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="验证码"
+                />
+            <Button
+                android:background="#71C3C8"
+                android:id="@+id/getnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="获取验证码"
+                />
+        </LinearLayout>
+    <Button
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/regist_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bt"
+        android:text="注册"
+        />
+
+
+
+</LinearLayout>
